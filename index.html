@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="./assets/logo/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Panaderia Juanazo 🥐</title>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="./index.html">
+        <img src="./assets/logo/logo.png" alt="Logo Panaderia Juanazo" class="logo-img" />
+        Panaderia Juanazo
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="header-nav" aria-label="Principal">
+        <ul>
+          <li><a href="./pages/productos.html">Productos</a></li>
+          <li><a href="./pages/contacto.html">Contacto</a></li>
+          <li><a href="./pages/carrito.html" class="carrito-icono" aria-label="Ir al carrito"><img width="30" height="30" src="https://img.icons8.com/fuzzy/100/shopping-cart.png" alt="shopping-cart"/><span id="contador-carrito"></span></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="inicio">
+        <h1>Bienvenidos a la Panaderia de Juanazo 🥐</h1>
+        <p class="parrafo">Panadería y Pastelería Artesanal: ingredientes simples, horneado diario y mucho cariño en cada pieza.</p>
+        <a href="./pages/productos.html" class="btn btn-primario">Ver productos</a>
+      </section>
+    <footer>
+      <p>Realizado por Juanazo para Talento Tech</p>
+      <ul class="footer-list">
+        <li><img src="../assets/redes/whatsapp.png" alt="WhatsApp" /></li>
+        <li><img src="../assets/redes/social.png" alt="Instagram" /></li>
+      </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/menu_toogle.js"></script>
+  </body>
+</html>
