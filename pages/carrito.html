@@ -1,1 +1,48 @@
-
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="../assets/logo/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Carrito | Panaderia Juanazo</title>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="../index.html">
+        <img src="../assets/logo/logo.png" alt="Logo Panaderia Juanazo" class="logo-img" />
+        Panaderia Juanazo
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="header-nav" aria-label="Principal">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+          <li><a href="./productos.html">Productos</a></li>
+          <li><a href="./carrito.html" class="carrito-icono" aria-label="Ir al carrito"><img width="40" height="40" src="https://img.icons8.com/3d-fluency/94/shopping-cart-loaded.png" alt="shopping-cart-loaded"/><span id="contador-carrito"></span></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="titulo-seccion">Carrito de compras</h1>
+      <section id="contenedor-carrito" class="contenedor-tarjetas"></section>
+      <div id="acciones-carrito" class="acciones-carrito"></div>
+      <section id="resumen-carrito" class="resumen"></section>
+    </main>
+    <footer>
+      <p>Realizado por Juanazo para Talento Tech</p>
+      <ul class="footer-list">
+        <li><img src="../assets/redes/whatsapp.png" alt="WhatsApp" /></li>
+        <li><img src="../assets/redes/social.png" alt="Instagram" /></li>
+      </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="../js/carrito.js"></script>
+    <script type="module" src="../js/menu_toogle.js"></script>
+  </body>
+</html>

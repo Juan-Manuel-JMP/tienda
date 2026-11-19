@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="../assets/logo/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Panaderia Juanazo 🥐</title>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="./index.html">
+        <img src="../assets/logo/logo.png" alt="Logo Panaderia Juanazo" class="logo-img" />
+        Panaderia Juanazo
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="header-nav" aria-label="Principal">
+        <ul>
+          <li><a href="/index.html" class="activo">Inicio</a></li>
+          <li><a href="../pages/contacto.html">Contacto</a></li>
+          <li><a href="../pages/carrito.html" class="carrito-icono" aria-label="Ir al carrito"><img width="30" height="30" src="https://img.icons8.com/fuzzy/100/shopping-cart.png" alt="shopping-cart"/><span id="contador-carrito"></span></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="inicio">
+        <h1>Bienvenidos a la Panaderia de Juanazo 🥐</h1>
+        <p class="parrafo">Panadería y Pastelería Artesanal: ingredientes simples, horneado diario y mucho cariño en cada pieza.</p>
+        <a href="#productos" class="btn btn-primario">Ver productos</a>
+      </section>
+
+      <section id="productos">
+        <h2 class="titulo-seccion">Nuestros productos</h2>
+        <div class="barra-filtros">
+          <input id="buscador" type="search" placeholder="Buscar producto..." aria-label="Buscar producto" />
+          <select id="orden" aria-label="Ordenar productos">
+            <option value="">Ordenar por...</option>
+            <option value="menor">Precio: menor a mayor</option>
+            <option value="mayor">Precio: mayor a menor</option>
+            <option value="az">Nombre: A-Z</option>
+          </select>
+        </div>
+        <div id="contenedor-tarjetas" class="contenedor-tarjetas" aria-live="polite"></div>
+      </section>
+    </main>
+    <footer>
+      <p>Realizado por Juanazo para Talento Tech</p>
+      <ul class="footer-list">
+        <li><img src="../assets/redes/whatsapp.png" alt="WhatsApp" /></li>
+        <li><img src="../assets/redes/social.png" alt="Instagram" /></li>
+      </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/productos.js" type="module"></script>
+    <script src="../js/menu_toogle.js" type="module"></script>
+  </body>
+</html>
